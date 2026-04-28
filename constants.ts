@@ -1,0 +1,4 @@
+# .env.example
+MONGO_URI=
+PORT=3000
+NODE_ENV=development
