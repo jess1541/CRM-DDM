@@ -1,39 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo DDM CRM | Elite v5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-datepicker@4.25.0/dist/react-datepicker.min.css">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #f1f5f9;
+        color: #1e293b;
+        overflow-x: hidden;
+        min-height: 100dvh;
+      }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+      .animate-fadeIn { animation: fadeIn 0.4s ease-out forwards; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .react-datepicker-wrapper { width: 100%; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+    <script type="importmap">
 {
-  "name": "rc-medicall-app",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "tsc --noEmit"
-  },
-  "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-router-dom": "^6.22.3",
-    "lucide-react": "0.344.0",
-    "date-fns": "^3.3.1",
-    "express": "^4.18.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "mongoose": "^8.2.1",
-    "xlsx": "^0.18.5",
-    "file-saver": "^2.0.5",
-    "react-datepicker": "^4.25.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "@types/file-saver": "^2.0.7",
-    "@types/react-datepicker": "^6.2.0",
-    "autoprefixer": "^10.4.18",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?deps=react@18.2.0,react-dom@18.2.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.2.0",
+    "date-fns": "https://esm.sh/date-fns@3.3.1",
+    "date-fns/locale": "https://esm.sh/date-fns@3.3.1/locale",
+    "react-datepicker": "https://esm.sh/react-datepicker@4.25.0?deps=react@18.2.0,react-dom@18.2.0",
+    "express": "https://esm.sh/express@^5.2.1",
+    "cors": "https://esm.sh/cors@^2.8.6",
+    "url": "https://esm.sh/url@^0.11.4",
+    "path": "https://esm.sh/path@^0.12.7",
+    "mongoose": "https://esm.sh/mongoose@^8.2.1",
+    "dotenv": "https://esm.sh/dotenv@^16.4.5",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "date-fns/": "https://esm.sh/date-fns@^4.1.0/"
   }
 }
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
